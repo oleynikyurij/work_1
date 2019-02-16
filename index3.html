@@ -102,62 +102,294 @@
 
 	<section class="section content ">
 		<div class="container-fluid wrap">
-				<h1 class="section-h1">Dashboard</h1>
+			<h1 class="section-h1">Dashboard</h1>
 			<div class="row">
-				<div class="col-3">
-					<div class="recepits">
-						.	
+				<div class="col-xl-3 col-12">
+					<div class="recepits ">
+						<div class="profile">
+							<div class="profile__image">
+								<img src="img/dashboard-avatar.jpg" alt="profile image">
+								<a href="#" class="profile__image--edit"><img src="img/edit-avatar.png" alt="edit avatar"></a>
+							</div>
+							<h5 class="profile__name">Annabele Jonson</h5>
+							<p class="profile__text">TRYP INFLUENCER</p>
+							<div class="input">
+									<div class="block-link">
+										<a href="#" class="link">Edit Profile</a>
+									</div>
+							</div>
+							<div class="profile__rank">
+									Your Tryp Rank
+									<span class="rank__number">24</span>
+							</div>
+						</div>
 					</div>
-					<div class="recepits">
-						<h3><span class="recepits__image"><img src="img/edit-account.png" alt="edit account"></span>
+					<div class="recepits billing  edit-account">
+						<h3 ><span class="recepits__image mb-2"><img src="img/edit-account.png" alt="edit account"></span>
 							Edit Account
 						</h3>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="recepits">
-						<h3><span class="recepits__image"><img src="img/edit-profaile.png" alt="edit profile"></span>
-							Edit Profile
-						</h3>
-						<div class="input">
-								<div class="input__item">
-									<label class="input__label input__label--not-required">Busines Name</label>
-									<input type="text" name="" class="input__field" placeholder="AnnaTryp">
-								</div>
-								<div class="input__item">
-									<label class="input__label">Adress</label>
-									<input type="text" name="" class="input__field" required>
-								</div>
+
+						<form>
+							<div class="input">
+									<div class="input__item">
+										<label class="input__label input__label--not-required">Login Name</label>
+										<input type="text" name="" class="input__field" placeholder="Anna Tryp">
+									</div>
 							</div>
 							<div class="input">
 									<div class="input__item">
-										<label class="input__label">Zip/Postal Code</label>
-										<input type="text" name="" class="input__field" required placeholder="Business Name">
+										<label class="input__label input__label--not-required">Password</label>
+										<input type="password" name="" class="input__field" placeholder="123password123">
 									</div>
+							</div>
+							<div class="input">
 									<div class="input__item">
-										<label class="input__label">Country</label>
-										<select class="input__select">
-											<option selected>United States</option>
-											<option value="1">United States 1</option>
-											<option value="2">United States 2</option>
-											<option value="3">United States 3</option>
-											<option value="4">United States 4</option>
-										</select>
+										<label class="input__label input__label--not-required">Re-Type Password</label>
+										<input type="password" name="" class="input__field" placeholder="123password123">
 									</div>
+							</div>
+							<div class="input">
+									<div class="block-link">
+										<a href="#" class="link">Update Account</a>
+									</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+				<div class="col-xl-6 col-12">
+					<div class="recepits billing">
+						<h3><span class="recepits__image mb-2"><img src="img/edit-profaile.png" alt="edit profile"></span>
+							Edit Profile
+						</h3>
+
+						<form>
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Login Name</label>
+									<input type="text" name="" class="input__field" placeholder="Anna">
 								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Last Name</label>
+									<input type="text" name="" class="input__field" placeholder="Tryp">
+								</div>
+							</div>
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Email</label>
+									<input type="email" name="" class="input__field" placeholder="test@test.com">
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Re-Email</label>
+									<input type="email" name="" class="input__field" placeholder="test@test.com">
+								</div>
+							</div>
+
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Business Name</label>
+									<input type="text" name="" class="input__field" placeholder="Business Name">
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Display Title</label>
+									<select class="input__select">
+										<option selected>Business Name</option>
+										<option value="1">Business Name 1</option>
+										<option value="2">Business Name 2</option>
+										<option value="3">Business Name 3</option>
+										<option value="4">Business Name 4</option>
+									</select>
+								</div>
+							</div>
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Mobile/Cell Phone</label>
+									<input type="text" name="" class="input__field" placeholder="+1 222 333 444">
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Evening Phone</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+							</div>
+
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Day Phone</label>
+									<input type="text" name="" class="input__field" placeholder="+1 222 333 444">
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Display Phone</label>
+									<select class="input__select">
+										<option selected>Business Name</option>
+										<option value="1">Business Name 1</option>
+										<option value="2">Business Name 2</option>
+										<option value="3">Business Name 3</option>
+										<option value="4">Business Name 4</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Address</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">City</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+							</div>
+
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">State</label>
+									<select class="input__select">
+										<option selected>Select State or Province</option>
+										<option value="1">State 1</option>
+										<option value="2">State 2</option>
+										<option value="3">State 3</option>
+										<option value="4">State 4</option>
+									</select>
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">City</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+							</div>
+
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Country</label>
+									<select class="input__select">
+										<option selected>United States</option>
+										<option value="1">United States 1</option>
+										<option value="2">United States 2</option>
+										<option value="3">United States 3</option>
+										<option value="4">United States 4</option>
+									</select>
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Time Zone</label>
+									<select class="input__select">
+										<option selected>(UTC -04:00) Atlantic</option>
+										<option value="1">Time Zone 1</option>
+										<option value="2">Time Zone 2</option>
+										<option value="3">Time Zone 3</option>
+										<option value="4">Time Zone 4</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Best Time to Call</label>
+									<select class="input__select">
+										<option selected>Morning</option>
+										<option value="1">Morning 1</option>
+										<option value="2">Morning 2</option>
+										<option value="3">Morning 3</option>
+										<option value="4">Morning 4</option>
+									</select>
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Subscribe to TRYP
+										Newsletter</label>
+									<select class="input__select">
+										<option selected>Yes</option>
+										<option value="1">Yes</option>
+										<option value="2">No</option>
+
+									</select>
+								</div>
+							</div>
+
+							<div class="recepits__alert mb-5">
+								<img src="img/alert.png" alt="alert">
+								<p>My Text Updates! - Enter your texting address and you will receive
+									notifications right on your phone </p>
+							</div>
+
+							<div class="input">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Mobile/Cell Phone
+										Number</label>
+									<input type="text" name="" class="input__field" placeholder="+1 222 333 444">
+								</div>
+								<div class="input__item">
+									<label class="input__label input__label--not-required">Carrier</label>
+									<select class="input__select">
+										<option selected>AT&T</option>
+										<option value="1">AT&T 1</option>
+										<option value="2">AT&T 2</option>
+										<option value="3">AT&T 3</option>
+										<option value="4">AT&T 4</option>
+									</select>
+								</div>
+							</div>
+							<div class="input">
+								<div class="block-link">
+									<a href="#" class="link">Update Profile</a>
+								</div>
+							</div>
+						</form>
+
 					</div>
 
 				</div>
-				<div class="col-3">
-					<div class="recepits">
-						<h3><span class="recepits__image"><img src="img/social-share.png" alt="sochial share"></span>
+				<div class="col-xl-3 col-12">
+					<div class="recepits billing social-share">
+						<h3><span class="recepits__image mb-2"><img src="img/social-share.png" alt="sochial share"></span>
 							Social Accounts
 						</h3>
+
+						<form>
+							<div class="input">
+								<img src="img/fb-share.png" alt="facebook" class="share-img">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">User Name</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+							</div>
+							<div class="input">
+								<img src="img/tw-share.png" alt="twitter" class="share-img">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">User Name</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+							</div>
+							<div class="input">
+								<img src="img/yuotub-share.png" alt="yuotube" class="share-img">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">User Name</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+							</div>
+							<div class="input">
+								<img src="img/inst-share.png" alt="instagramm" class="share-img">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">User Name</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+							</div>
+							<div class="input">
+								<img src="img/ink-share.png" alt="link" class="share-img">
+								<div class="input__item">
+									<label class="input__label input__label--not-required">User Name</label>
+									<input type="text" name="" class="input__field" placeholder="">
+								</div>
+							</div>
+	
+							<div class="input">
+								<div class="block-link">
+									<a href="#" class="link">Save</a>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>				
+	</section>
 	<footer class="footer">
 		<p class="copy">Copyright &copy; 2018 Tryp Technologies Inc. All rights reserved.</p>
 		<p class="privacy"> <a href="#">Terms of use</a> <span>|</span> <a href="#">Privacy
