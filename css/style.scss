@@ -738,21 +738,19 @@ img {
 
 
 .profile {
-	
 	text-align: center;
 	padding: 35px 0;
 	&__image {
 		position: relative;
-		margin-bottom: 30px;
-		img {
-			width: 140px;
+		margin:0 auto 30px;
+		width: 140px;
 			height: 140px;
-		}
+		
 		&--edit {
 			display: inline-block;
 			position: absolute;
 			bottom: 10px;
-			right: 80px;
+			right: 10px;
 			width: 24px;
 			height: 24px;
 			border-radius: 50%;
@@ -785,15 +783,14 @@ img {
 		line-height: 24px;
 		text-transform: uppercase;
 	}
-	.input {
-		
-	}
+	
 	&__rank {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		max-width: 261px;
 		height: 78px;
+		margin: 0 auto;
 		font-family: "Open Sans Semibold";
 		font-size: 16px;
 		
@@ -811,7 +808,7 @@ vertical-align: middle;
 color: #ffffff;
 font-family: "Open Sans Bold";
 font-size: 24px;
-
+text-align: center;
 line-height: 64px;
 background-color: #787ff8;
 background-image: linear-gradient(-45deg, #787ff8 0%, #ef60a0 100%);
@@ -971,8 +968,19 @@ background-image: linear-gradient(-45deg, #787ff8 0%, #ef60a0 100%);
   }
   .billing .input:last-child {
     justify-content: center;
-  }
+	}
+	.edit-account.billing .input:last-child {
+			justify-content: center;
+		
+	}
+
 }
+@media (min-width: 992px) { 
+	.edit-account.billing .input:last-child {
+		justify-content: center;
+	
+}
+ }
 
 @media (max-width: 560px) {}
 
@@ -1037,7 +1045,10 @@ background-image: linear-gradient(-45deg, #787ff8 0%, #ef60a0 100%);
   .billing .input {
     flex-direction: column;
     margin-bottom: 10px;
-  }
+	}
+	.billing .input:nth-child(7) {
+    margin-bottom: 10px;
+}
   .billing .input__item {
     width: 100%;
     margin-bottom: 40px;
@@ -1078,5 +1089,13 @@ background-image: linear-gradient(-45deg, #787ff8 0%, #ef60a0 100%);
   }
   .electronic__input.empty {
     margin-bottom: 0;
-  }
+	}
+	.social-share.billing .input {
+			flex-direction: row;
+			margin-bottom: 10px;
+			.input__item {
+				margin-bottom: 27px;
+			}
+		}
+	
 }
