@@ -68,7 +68,7 @@ mobileMenu.addEventListener('click', (e) => {
 	 btnClose = document.getElementById('btn-close'),
 	 btnAll = document.getElementById('btn-all');
 
-	if (!item) {
+	if (!btnAll) {
 		return;
 	};
 
@@ -122,9 +122,6 @@ mobileMenu.addEventListener('click', (e) => {
 			});
 	});
 	
-	
-
-
 
 	item.forEach((el, i) => {
 		el.addEventListener('click', function () {
