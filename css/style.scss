@@ -831,25 +831,23 @@ img {
     height: 72px;
     background-color: #f7f9fb;
     .header__item {
-			position: relative;
-			transition: 0.3s ease-in;
-			&:hover::after {
-				
-				position: absolute;
-				content:attr(data-title);
-				padding: 7px;
-				border: 1px solid #d4dce6;
-				border-radius: 6px;
-				top: -45px;
-				background-color: #f7f9fb;
-				font-family: "Open Sans";
-				font-size: 11px;
-				white-space: pre-wrap;
+      position: relative;
+      transition: 0.3s ease-in;
+      &:hover::after {
+        position: absolute;
+        content: attr(data-title);
+        padding: 7px;
+        border: 1px solid #d4dce6;
+        border-radius: 6px;
+        top: -45px;
+        background-color: #f7f9fb;
+        font-family: "Open Sans";
+        font-size: 11px;
+        white-space: pre-wrap;
         line-height: initial;
-				min-width: 90px;
-				z-index: 2;
-			}
-
+        min-width: 90px;
+        z-index: 2;
+      }
       color: #19375d;
       font-family: "Open Sans Bold";
       line-height: 72px;
@@ -1033,16 +1031,16 @@ img {
 }
 
 .tank__block {
-	display: flex;
-	justify-content: flex-start;
-	margin-bottom: 15px;
-	div,
-	.tank__h4 {
-		margin-right: 25px;
-	}
-	.tank__h4 {
-		padding-top: 10px;
-	}
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  div,
+  .tank__h4 {
+    margin-right: 25px;
+  }
+  .tank__h4 {
+    padding-top: 10px;
+  }
 }
 
 //W8 Form 

@@ -1,9 +1,8 @@
-
 //CUSTOM SCROLL
-(function($){
-	$(window).on("load",function(){
-			$(".recepits__table").mCustomScrollbar();
-			$('select').niceSelect();
+(function ($) {
+	$(window).on("load", function () {
+		$(".recepits__table").mCustomScrollbar();
+		$('select').niceSelect();
 	});
 })(jQuery);
 
@@ -31,25 +30,25 @@ mobileMenu.addEventListener('click', (e) => {
 });
 
 
-(function checkPage () {
+(function checkPage() {
 	let w8Form = document.querySelector('.w8__form');
 	let w8Btn = document.getElementById('w8');
 	let w8SaveBtn = document.getElementById('w8-save');
 
 	if (w8Form) {
-		w8Btn.addEventListener('click', function(e) {
+		w8Btn.addEventListener('click', function (e) {
 			e.preventDefault();
 			w8Form.classList.toggle('dn');
 		});
-		
-		w8SaveBtn.addEventListener('click', function(e) {
+
+		w8SaveBtn.addEventListener('click', function (e) {
 			e.preventDefault();
 			let input = document.querySelectorAll('.w8__form input'),
-			inputCheckbox = document.querySelectorAll('.w8__form input[type="radio"]');
-			input.forEach(function(item) {
+				inputCheckbox = document.querySelectorAll('.w8__form input[type="radio"]');
+			input.forEach(function (item) {
 				item.value = '';
 			});
-			inputCheckbox.forEach(function(item) {
+			inputCheckbox.forEach(function (item) {
 				item.checked = false;
 			});
 			w8Form.classList.add('dn');
@@ -59,14 +58,3 @@ mobileMenu.addEventListener('click', (e) => {
 	}
 
 })();
-
-
-
- 
-
-
-
-
-
-
-
