@@ -1374,6 +1374,11 @@ img {
   position: relative;
 }
 
+.tank__table .table__row .table__item--open.rotate::before {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
 .tank__table .table__row .table__item--open::before {
   content: '▼';
   position: absolute;

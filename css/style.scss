@@ -918,7 +918,12 @@ img {
         width: 14%;
       }
       &--open {
-        position: relative;
+				position: relative;
+				&.rotate {
+					&::before {
+						transform:rotate(25deg);
+					}
+				}
         &::before {
           content: '▼';
           position: absolute;
