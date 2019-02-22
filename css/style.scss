@@ -843,35 +843,40 @@ img {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+.tank__table.table .header__item span{
+position: relative;
 
-.tank__table {
-  border-radius: 6px;
-  border: 1px solid #d4dce6;
+&:hover::after {
+	position: absolute;
+	content: attr(data-title);
+	padding: 7px;
+	border: 1px solid #d4dce6;
+	border-radius: 6px;
+	top: -75px;
+	background-color: #f7f9fb;
+	font-family: "Open Sans";
+	font-size: 11px;
+	white-space: pre-wrap;
+	line-height: initial;
+	min-width: 90px;
+	z-index: 2;
+}}
+
+.table {
+  
+	background-color: #f7f9fb;
+	border-radius: 6px;
   .table__header {
     display: flex;
-    height: 72px;
-    background-color: #f7f9fb;
+		height: 72px;
+		padding: 9px;
+    background-color: #ffffff;
     .header__item {
-      position: relative;
+			display: inline-flex;
+    	align-self: center;
       transition: 0.3s ease-in;
-      &:hover::after {
-        position: absolute;
-        content: attr(data-title);
-        padding: 7px;
-        border: 1px solid #d4dce6;
-        border-radius: 6px;
-        top: -45px;
-        background-color: #f7f9fb;
-        font-family: "Open Sans";
-        font-size: 11px;
-        white-space: pre-wrap;
-        line-height: initial;
-        min-width: 90px;
-        z-index: 2;
-      }
       color: #19375d;
       font-family: "Open Sans Bold";
-      line-height: 72px;
       width: 8%;
       &--user {
         width: 17%;
@@ -895,12 +900,16 @@ img {
     }
   }
   .table__row {
-    display: flex;
-    border-bottom: 1px solid #ebf0f6;
+		display: flex;
+		box-shadow: 0 15px 30px rgba(155, 173, 195, 0.2);
+		border-radius: 6px;
+		margin: 9px;
     height: 72px;
+		background-color: #fff;
     .table__item {
+			display: inline-flex;
+    	align-self: center;
       width: 8%;
-      line-height: 72px;
       color: #19375d;
       font-family: "Open Sans Bold";
       text-align: left;
@@ -954,7 +963,8 @@ img {
       }
     }
     .table__memberId {
-      display: flex;
+			display: flex;
+			align-items: center;
       .input__select {
         outline: none;
         border: none;
@@ -963,7 +973,6 @@ img {
         padding-bottom: 10px;
         font-size: 16px;
         padding-bottom: 10px;
-        margin-top: 16px;
       }
       .input__select.nice-select {
         padding-left: 0;
@@ -1066,7 +1075,6 @@ img {
   justify-content: space-between;
 	margin-bottom: 15px;
 
-	
 	.tank__buttons {
 		display: flex;
 		margin-bottom: 31px;
@@ -1078,13 +1086,7 @@ img {
 			margin-left: 15px;
 		}
 	}
-  // div,
-  // .tank__h4 {
-  //   margin-right: 25px;
-  // }
-  // .tank__h4 {
-  //   padding-top: 10px;
-  // }
+  
 }
 
 //W8 Form 
@@ -1103,17 +1105,11 @@ img {
 			margin-left: 16px;
 		}
 		&__search {
-			position: relative;
+			
+			
 		}
-		&__img {
-			width: 19px;
-			height: 19px;
-			position: absolute;
-			top: 17px;
-			left: 17px;
-		}
+		
 		&__input {
-			position: relative;
 			width: 365px;
 			height: 50px;
 			border-radius: 25px;
@@ -1122,13 +1118,18 @@ img {
 			padding-left: 41px;
 			color: #60768e;
 			outline: none;
-		}
+			background-image: url("../img/search.png");
+			background-repeat: no-repeat;
+			background-position: 14px;
+  	}
 	}
 
 	.link__circle {
 		width: 50px;
 		height: 50px;
 		}
+
+
 
 
 //FOOTER
