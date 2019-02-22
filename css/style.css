@@ -1618,9 +1618,184 @@ img {
   background-position: 14px;
 }
 
-.link__circle {
+.filter .link__circle {
   width: 50px;
   height: 50px;
+}
+
+.table__contact.table .table__header--creat,
+.table__contact.table .table__header--date,
+.table__contact.table .table__item--date,
+.table__contact.table .table__item--creat {
+  width: 25%;
+}
+
+.table__contact.table .table__header--email,
+.table__contact.table .table__item--email {
+  width: 20%;
+}
+
+.table__contact.table .table__header--phone,
+.table__contact.table .table__header--visit,
+.table__contact.table .table__item--phone,
+.table__contact.table .table__item--visit {
+  width: 10%;
+}
+
+.table__contact.table .table__header--phone,
+.table__contact.table .table__item--phone {
+  width: 15%;
+}
+
+.table__contact.table .table__header--page,
+.table__contact.table .table__item--page {
+  width: 75px;
+}
+
+.table__contact .table__header--date {
+  padding-left: 55px;
+}
+
+.table__contact .header-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  -webkit-box-shadow: 0 4px 21px rgba(56, 78, 104, 0.2);
+          box-shadow: 0 4px 21px rgba(56, 78, 104, 0.2);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.table__contact .header-link:first-child {
+  margin-right: 7px;
+}
+
+.table__contact .header-link:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.table__contact .header-link img {
+  width: 10px;
+}
+
+.table__contact .table__item--date {
+  padding-left: 17px;
+}
+
+.table__contact .checkmark {
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  border-radius: 4px;
+  border: 1px solid #c1cede;
+}
+
+.table__contact .contact__user {
+  width: 42px;
+  margin-left: 10px;
+  margin-right: 14px;
+}
+
+.table__contact .contact__name {
+  line-height: 36px;
+}
+
+.table__contact .contact__mail {
+  width: 24px;
+  height: 18px;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.table__contact .contact__open {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto 20px 12px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.table__contact .contact__open:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.table__contact .contact__open::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/rotate.png");
+  background-repeat: no-repeat;
+}
+
+.table__contact .contact__edit {
+  display: inline-block;
+  margin: auto;
+  width: 26px;
+}
+
+.table__contact .contact__edit:hover span {
+  background-color: #0072ff;
+}
+
+.table__contact .contact__edit:hover span::before {
+  background-color: #0072ff;
+}
+
+.table__contact .contact__edit:hover span::after {
+  background-color: #0072ff;
+}
+
+.table__contact .contact__edit span {
+  position: relative;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #c2ccd6;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.table__contact .contact__edit span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  background-color: #c2ccd6;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.table__contact .contact__edit span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 12px;
+  background-color: #c2ccd6;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .footer {
