@@ -1664,7 +1664,7 @@ img {
 }
 
 .table__wrap {
-  overflow-x: scroll;
+  overflow-x: initial;
 }
 
 .table__contact.table .table__row {
@@ -2170,6 +2170,9 @@ img {
 }
 
 @media (max-width: 991.98px) {
+  .table__wrap {
+    overflow-x: scroll;
+  }
   .section {
     padding-top: 40px;
     padding-bottom: 30px;
