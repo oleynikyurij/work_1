@@ -1586,6 +1586,10 @@ img {
           align-items: center;
 }
 
+.tank__block .tank__buttons div:first-child {
+  margin-right: 10px;
+}
+
 .tank__block .tank__buttons .link__light {
   margin-left: 15px;
 }
@@ -2150,6 +2154,10 @@ img {
   .section-h1 {
     margin-left: 5%;
   }
+  .tank__buttons .link__light,
+  .tank__buttons .block__light {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -2233,6 +2241,19 @@ img {
   .filter__button {
     margin-top: 20px;
   }
+  .tank__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .tank__buttons .link__light,
+  .tank__buttons .block__light {
+    margin-bottom: 5px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2282,7 +2303,7 @@ img {
     padding-left: 0;
     padding-right: 0;
   }
-  .input__tank .block__info {
+  .input__tank div {
     text-align: center;
   }
   .tank__text {
@@ -2293,6 +2314,17 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .tank__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .tank__buttons .link__light,
+  .tank__buttons .block__light {
+    margin-bottom: 10px;
   }
 }
 

@@ -1081,7 +1081,10 @@ img {
     margin-bottom: 31px;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+		align-items: center;
+		div:first-child {
+			margin-right: 10px;
+		}
     .link__light {
       margin-left: 15px;
 		}
@@ -1581,7 +1584,13 @@ img {
     &-h1 {
       margin-left: 5%;
     }
-  }
+	}
+	.tank__buttons {
+		.link__light,
+		.block__light {
+			margin-bottom: 5px;
+		}
+	}
 }
 
 @media (max-width: 991.98px) {
@@ -1659,12 +1668,23 @@ img {
 			margin-top: 20px;
 		}
 	}
+	.tank__block {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.tank__buttons {
+		.link__light,
+		.block__light {
+			margin-bottom: 5px;
+		}
+	}
 }
 
 @media (min-width: 992px) {
   .edit-account.billing .input:last-child {
     justify-content: center;
 	}
+	
 
 }
 
@@ -1694,7 +1714,7 @@ img {
 	.input__tank {
 		padding-left: 0;
 		padding-right: 0;
-		.block__info {
+		div {
 			text-align: center;
 		}
 	}
@@ -1703,6 +1723,14 @@ img {
 	}
 	.tank__block {
 		flex-direction: column;
+	}
+	.tank__buttons {
+		flex-direction: column;
+		text-align: center;
+		.link__light,
+		.block__light {
+			margin-bottom: 10px;
+		}
 	}
 }
 
