@@ -1601,6 +1601,8 @@ img {
   background-color: #0073ff;
   border-radius: 6px;
   padding: 10px 20px 10px 10px;
+  -webkit-box-shadow: 0 10px 20px rgba(160, 176, 194, 0.5);
+          box-shadow: 0 10px 20px rgba(160, 176, 194, 0.5);
 }
 
 .tank__block .tank__buttons .block__light span {
