@@ -1296,6 +1296,10 @@ img {
   z-index: 2;
 }
 
+.tank__table {
+  min-width: 975px;
+}
+
 .table {
   background-color: #f7f9fb;
   border-radius: 6px;
@@ -2273,6 +2277,22 @@ img {
   }
   .filter__bottom .link__light {
     margin-top: 10px;
+  }
+  .input__tank {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .input__tank .block__info {
+    text-align: center;
+  }
+  .tank__text {
+    line-height: normal;
+  }
+  .tank__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

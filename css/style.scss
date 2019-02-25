@@ -862,6 +862,9 @@ img {
     z-index: 2;
   }
 }
+.tank__table {
+	min-width: 975px;
+}
 
 .table {
   background-color: #f7f9fb;
@@ -1687,6 +1690,19 @@ img {
 		.link__light {
 			margin-top: 10px;
 		}
+	}
+	.input__tank {
+		padding-left: 0;
+		padding-right: 0;
+		.block__info {
+			text-align: center;
+		}
+	}
+	.tank__text {
+		line-height: normal;
+	}
+	.tank__block {
+		flex-direction: column;
 	}
 }
 
