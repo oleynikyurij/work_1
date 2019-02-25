@@ -58,6 +58,7 @@ mobileMenu.addEventListener('click', (e) => {
 	}
 
 })();
+
 (function () {
 
 	let itemParent = document.querySelectorAll('[data-parent] > .table__item:first-child'),
@@ -140,4 +141,21 @@ mobileMenu.addEventListener('click', (e) => {
 
 
 
+})();
+
+(function () {
+	let filter = document.querySelector('.filter__input');
+	if(!filter) {
+		return;
+	}
+	let contactOpen = document.querySelectorAll('.contact__open');
+	let infoBlock = document.querySelectorAll('.info');
+	contactOpen.forEach(function(el, i) {
+		el.addEventListener('click', function(e) {
+			e.preventDefault();
+			el.classList.toggle('open');
+			infoBlock[i].classList.toggle('active');
+			// console.log(infoBlock[i]);
+		});
+	});
 })()

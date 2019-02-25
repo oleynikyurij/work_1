@@ -1905,6 +1905,11 @@ img {
   transition: 0.3s ease-in;
 }
 
+.table__contact .contact__open.open::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .table__contact .contact__open:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -1917,6 +1922,8 @@ img {
   height: 20px;
   background-image: url("../img/rotate.png");
   background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .table__contact .time {

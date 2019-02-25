@@ -137,6 +137,7 @@ img {
   display: none;
 }
 
+
 @import 'nice-select';
 @import 'checkbox.scss';
 // HEADER
@@ -1342,9 +1343,15 @@ img {
 			border-radius: 50%;
 			margin:  auto 20px 12px;
 			transition: 0.3s ease-in;
+			&.open {
+				&::after {
+					transform: rotate(0deg);
+				}
+			}
 			&:hover {
 				transform: scale(1.1);
 			}
+			
 			&::after {
 				content: "";
 				display: block;
@@ -1352,6 +1359,7 @@ img {
 				height: 20px;
 				background-image: url("../img/rotate.png");
 				background-repeat: no-repeat;
+				transform: rotate(180deg);
 			}
 		}
 	
