@@ -1586,6 +1586,19 @@ img {
   margin-left: 15px;
 }
 
+.tank__block .tank__buttons .block__light {
+  display: inline-block;
+  font-family: "Open Sans Bold";
+  color: #fff;
+  background-color: #0073ff;
+  border-radius: 6px;
+  padding: 10px 20px 10px 10px;
+}
+
+.tank__block .tank__buttons .block__light span {
+  margin-left: 5px;
+}
+
 .w8__form {
   border-bottom: 2px solid #ebf0f6;
   margin-bottom: 60px;
