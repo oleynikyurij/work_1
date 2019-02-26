@@ -1099,6 +1099,10 @@ img {
 			border-radius: 6px;
 			box-shadow: 0 10px 20px rgba(160, 176, 194, 0.5);
 			text-align: center;
+			transition: 0.3s ease-in;
+			&:hover {
+				background-image: linear-gradient(to bottom, #0073ff 0%, #0073ff 100%);
+			 }
 			p {
 				margin: 0;
 				padding:5px 10px;
@@ -1108,7 +1112,7 @@ img {
 				width: 100%;
 				padding: 5px 0;
 				font-family: "Open Sans Bold";
-				font-size: 14px;
+				font-size: 22px;
 				border-bottom: 1px solid #fff;
 			}
 		}

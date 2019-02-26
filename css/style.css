@@ -1602,6 +1602,13 @@ img {
   -webkit-box-shadow: 0 10px 20px rgba(160, 176, 194, 0.5);
           box-shadow: 0 10px 20px rgba(160, 176, 194, 0.5);
   text-align: center;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.tank__block .tank__buttons .block__light:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0073ff), to(#0073ff));
+  background-image: linear-gradient(to bottom, #0073ff 0%, #0073ff 100%);
 }
 
 .tank__block .tank__buttons .block__light p {
@@ -1614,7 +1621,7 @@ img {
   width: 100%;
   padding: 5px 0;
   font-family: "Open Sans Bold";
-  font-size: 14px;
+  font-size: 22px;
   border-bottom: 1px solid #fff;
 }
 
