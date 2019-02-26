@@ -1908,8 +1908,8 @@ img {
 }
 
 .table__contact .contact__open.open::after {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .table__contact .contact__open:hover {
@@ -1924,8 +1924,8 @@ img {
   height: 20px;
   background-image: url("../img/rotate.png");
   background-repeat: no-repeat;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .table__contact .time {
