@@ -1083,7 +1083,7 @@ img {
     width: 100%;
     justify-content: space-between;
 		// align-items: center;
-		div:first-child {
+		& > div {
 			margin-right: 10px;
 		}
     .link__light {
@@ -1091,6 +1091,7 @@ img {
 		}
 		.block__light {
 			display: inline-block;
+			min-width: 120px;
 			font-size: 12px;
 			color: #fff;
 			background-image: linear-gradient(to bottom, #4aa1f8 0%, #0073ff 100%);

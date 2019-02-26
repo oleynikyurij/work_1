@@ -1583,7 +1583,7 @@ img {
           justify-content: space-between;
 }
 
-.tank__block .tank__buttons div:first-child {
+.tank__block .tank__buttons > div {
   margin-right: 10px;
 }
 
@@ -1593,6 +1593,7 @@ img {
 
 .tank__block .tank__buttons .block__light {
   display: inline-block;
+  min-width: 120px;
   font-size: 12px;
   color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#4aa1f8), to(#0073ff));
