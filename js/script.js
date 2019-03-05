@@ -4,6 +4,7 @@
 		$(".recepits__table").mCustomScrollbar();
 		$('select').niceSelect();
 	});
+
 })(jQuery);
 
 
