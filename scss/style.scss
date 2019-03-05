@@ -1097,19 +1097,28 @@ img {
 			width: 75px;
 			
 			font-size: 12px;
-			color: #fff;
-			background-image: linear-gradient(to bottom, #4aa1f8 0%, #0073ff 100%);
+			color: #292f35;
+			// background-			.. ифслпкщгтв-шьфпуЖ дштуфк-пкфвшуте(ещ ищеещьб №4фф1а8 0%б №0073аа 100%)ж
+image: linear-gradient(to bottom, #4aa1f8 0%, #0073ff 100%);
 			border-radius: 6px;
 			box-shadow: 0 10px 20px rgba(160, 176, 194, 0.5);
 			text-align: center;
 			transition: 0.3s ease-in;
 			&:hover {
-				background-image: linear-gradient(to bottom, #0073ff 0%, #0073ff 100%);
+				color: #fff;
+				background-image: linear-gradient(to bottom, #4aa1f8 0%, #0073ff 100%);
+				// background-image: linear-gradient(to bottom, #0073ff 0%, #0073ff 100%);
+				span {
+					border-bottom-color: #fff;
+					
+				}
 			 }
+
 			p {
 				margin: 0;
 				padding:5px 0;
 				font-size: 8px;
+				
 			}
 			span {
 				display: inline-block;
@@ -1117,7 +1126,8 @@ img {
 				// padding: 5px 0;
 				font-family: "Open Sans Bold";
 				font-size: 27px;
-				border-bottom: 1px solid #fff;
+				border-bottom: 1px solid  #0073ff;
+				
 			}
 		}
   }
@@ -1705,7 +1715,7 @@ img {
 	}
 	.tank__buttons {
 		& > div:first-child {
-			width: 40%;
+			width: 34%;
 		}
 		.link__light,
 		.block__light {
