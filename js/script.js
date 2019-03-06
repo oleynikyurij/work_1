@@ -4,7 +4,7 @@
 		$(".recepits__table").mCustomScrollbar();
 		$('select').niceSelect();
 	});
-	if($('#range')){
+	
 
 		$("#range").roundSlider({
 			sliderType: "min-range",
@@ -23,9 +23,7 @@
 			tooltipFormat: "tooltipVal1",
 			lineCap: "round"
 	});
-	} else {
-		return;
-	}
+	
 
 })(jQuery);
 
