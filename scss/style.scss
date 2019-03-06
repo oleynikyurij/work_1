@@ -1322,7 +1322,8 @@ input[type=range]:focus::-ms-fill-upper {
         color: #fff;
         background-image: linear-gradient(to bottom, #4aa1f8 0%, #0073ff 100%); // background-image: linear-gradient(to bottom, #0073ff 0%, #0073ff 100%);
         span {
-          border-bottom-color: #fff;
+					border-bottom-color: #fff;
+					
         }
       }
       p {
@@ -1332,9 +1333,10 @@ input[type=range]:focus::-ms-fill-upper {
       }
       span {
         display: inline-block;
-        width: 100%; // padding: 5px 0;
+				width: 100%;
+				padding: 5px 0;
         font-family: "Open Sans Bold";
-        font-size: 27px;
+        font-size: 26px;
         border-bottom: 1px solid #0073ff;
       }
     }
@@ -2131,7 +2133,20 @@ input[type=range]:focus::-ms-fill-upper {
     flex-direction: row;
     margin-bottom: 10px;
     .input__item {
-      margin-bottom: 27px;
+			margin-bottom: 27px;
+			
     }
-  }
+	}
+	.tank__block .tank__buttons>div {
+    margin-right: 21px;
+    margin-left: 21px;
+}
+	.tank__block .tank__buttons {
+		margin-bottom: 0;
+	 .link__light {
+		margin-left: 0;
+		margin-right: 2px;
+		width: 105px;
+
+	}}
 }
