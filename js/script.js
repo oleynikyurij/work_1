@@ -4,23 +4,28 @@
 		$(".recepits__table").mCustomScrollbar();
 		$('select').niceSelect();
 	});
-	$("#range").roundSlider({
-		sliderType: "min-range",
-    circleShape: "custom-quarter",
-    // circleShape: "custom-half",
-    min: 0,
-    max: 100,
-    value: 60,
-    startAngle: 45,
-    editableTooltip: false,
-    radius: 190,
-    // radius:120,
-		width: 20,
-		handleSize: "+17",
-    // handleShape: "dot",
-		tooltipFormat: "tooltipVal1",
-		lineCap: "round"
-});
+	if($('#range')){
+
+		$("#range").roundSlider({
+			sliderType: "min-range",
+			circleShape: "custom-quarter",
+			// circleShape: "custom-half",
+			min: 0,
+			max: 100,
+			value: 60,
+			startAngle: 45,
+			editableTooltip: false,
+			radius: 190,
+			// radius:120,
+			width: 20,
+			handleSize: "+17",
+			// handleShape: "dot",
+			tooltipFormat: "tooltipVal1",
+			lineCap: "round"
+	});
+	} else {
+		return;
+	}
 
 })(jQuery);
 
