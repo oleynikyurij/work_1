@@ -1102,7 +1102,7 @@ input[type=range]:focus::-ms-fill-upper {
 	}
 
 	#range .rs-tooltip {
-		top: 160px;
+		top: 150px;
 		width: 166px;
 		height: 166px;
 		border-radius: 50%;
@@ -1125,12 +1125,12 @@ input[type=range]:focus::-ms-fill-upper {
 	.rs-control .rs-range-color {
 		background-color: #738af9;
 		
-		// background: linear-gradient(to right, #738af9 0%, #f54b49 100%);
+		// background: linear-gradient(to right, #738af9 0%, #5c6bb9 100%);
 		
 	}
 
 	.rs-control .rs-path-color {
-		background-color: #f54b49;
+		background-color: #738af9;
 		
 		// background: linear-gradient(to left, #738af9 0%, #f54b49 100%);
 	}
