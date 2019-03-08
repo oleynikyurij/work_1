@@ -1079,70 +1079,153 @@ input[type=range]:focus::-ms-fill-upper {
 		white-space: normal;
 	}
 
-	&__wrap {
+	//custom range
 
+	.courved_range {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		
+	
+	
+	 .range__block {
+		//  border: 1px solid red;
+		position: relative;
+		width: 240px;
+		height: 88px;
+		display: inline-block;
+		cursor: pointer;
+		user-select: none;
+		z-index: 2;
+		background: url("../img/courved-range.png") no-repeat center;
+	
 	}
-
-	#range {
-		height: 275px !important;
-		// width: 100% !important;
-		width: 275px !important;
-		overflow: hidden;
-		padding: 10px;
-
-
+	
+	 .range__shadow {
+		position: absolute;
+		left: -18px;
+		bottom: -23px;
+		z-index: -1;
+		width: 272px;
 	}
-
-	#range .rs-container {
-
-		left: 93%;
-		margin-left: -300px;
+	
+	 img {
+		appearance: none;
+		user-select: none;
+		pointer-events: none;
 	}
-
-	#range .rs-tooltip {
-		top: 150px;
+	
+	 .range__data {
 		width: 166px;
 		height: 166px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: -30px;
+		border-radius: 50%;
+		box-shadow: 0 15px 35px rgba(114, 153, 183, 0.5);
+		background-color: #ffffff;
+		background-image: linear-gradient(to top, #f0f0f0 0%, #ffffff 100%);
+	}
+	
+	 .data__inner {
+		width: 131px;
+		height: 131px;
+		color: #19375d;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 130px;
+		text-align: center;
 		border-radius: 50%;
 		background-color: #ffffff;
 		background-image: linear-gradient(to top, #ffffff 0%, #f0f0f0 100%);
-		line-height: 96px;
-		color: #19375d;
-		font-family: "Open Sans Bold";
-		font-size: 30px;
+	}
+	
+	 .range__circle {
+		display: inline-block;
+		position: absolute;
+		left: 129px;
+		bottom: 59px;
+		width: 31px;
+		height: 31px;
+		border-radius: 50%;
 		box-shadow: 0 15px 35px rgba(189, 197, 208, 0.5);
-		border-width: 35px;
-		border-style: solid;
-		border-color: #f0f0f0;
-		
-		&:after {
-			content: "%";
-		}
+		border: 1px solid #eeeeee;
+		background-color: #f5f5f5;
+		background-image: linear-gradient(to top, #f0f0f0 0%, #ffffff 100%);
 	}
+}
 
-	.rs-control .rs-range-color {
-		background-color: #738af9;
-		
-		// background: linear-gradient(to right, #738af9 0%, #5c6bb9 100%);
-		
-	}
+	//end custom range
 
-	.rs-control .rs-path-color {
-		background-color: #738af9;
+
+
+
+
+	// &__wrap {
+
+	// 	display: flex;
+	// 	justify-content: center;
+	// }
+
+	// #range {
+	// 	height: 275px !important;
+	// 	// width: 100% !important;
+	// 	width: 275px !important;
+	// 	overflow: hidden;
+	// 	padding: 10px;
+
+
+	// }
+
+	// #range .rs-container {
+
+	// 	left: 93%;
+	// 	margin-left: -300px;
+	// }
+
+	// #range .rs-tooltip {
+	// 	top: 150px;
+	// 	width: 166px;
+	// 	height: 166px;
+	// 	border-radius: 50%;
+	// 	background-color: #ffffff;
+	// 	background-image: linear-gradient(to top, #ffffff 0%, #f0f0f0 100%);
+	// 	line-height: 96px;
+	// 	color: #19375d;
+	// 	font-family: "Open Sans Bold";
+	// 	font-size: 30px;
+	// 	box-shadow: 0 15px 35px rgba(189, 197, 208, 0.5);
+	// 	border-width: 35px;
+	// 	border-style: solid;
+	// 	border-color: #f0f0f0;
 		
-		// background: linear-gradient(to left, #738af9 0%, #f54b49 100%);
-	}
+	// 	&:after {
+	// 		content: "%";
+	// 	}
+	// }
 
-	.rs-control .rs-handle {
-		background-color: #ffffff;
-		border: 1px solid #eee;
-	}
+	// .rs-control .rs-range-color {
+	// 	background-color: #738af9;
+		
+	// 	// background: linear-gradient(to right, #738af9 0%, #5c6bb9 100%);
+		
+	// }
 
-	.rs-control .rs-bg-color {
-		background-color: #ffffff;
-	}
+	// .rs-control .rs-path-color {
+	// 	background-color: #738af9;
+		
+	// 	// background: linear-gradient(to left, #738af9 0%, #f54b49 100%);
+	// }
+
+	// .rs-control .rs-handle {
+	// 	background-color: #ffffff;
+	// 	border: 1px solid #eee;
+	// }
+
+	// .rs-control .rs-bg-color {
+	// 	background-color: #ffffff;
+	// }
 
 	&__confirm {
 		margin-top: 40px;
@@ -2050,8 +2133,13 @@ input[type=range]:focus::-ms-fill-upper {
 	.range .link {
 		margin-bottom: 2px;
 		margin-top: 28px;
-
+		
 	}
+	.range__confirm {
+		margin-bottom: 35px;
+	}
+	.range__upload {
+    margin-top: 55px;}
 			.edit-account {
 				&.recepits {
 					padding-top: 55px;

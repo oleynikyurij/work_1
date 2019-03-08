@@ -179,4 +179,46 @@ mobileMenu.addEventListener('click', (e) => {
 			// console.log(infoBlock[i]);
 		});
 	});
-})()
+})();
+
+(function(){
+
+
+	let range = document.querySelector('#range-block');
+	if(!range) {
+		return;
+	}
+	let circle = document.querySelector('.courved_range .range__circle');
+	let data = document.querySelector('.courved_range .data__inner');
+	// let section = document.querySelector('.recepits .billing .range');
+
+
+range.addEventListener('click', circlePosition);
+range.addEventListener('mousemove', function (e) {
+
+	if (event.which == 1) {
+		circlePosition(e);
+	}
+});
+
+function circlePosition(e) {
+	
+	let x = (e.clientX - range.getBoundingClientRect().left) ,
+		y;
+	
+
+	if (x < 10) {
+		x = 10;
+	} else if (x > 224) {
+		x = 226;
+	}
+
+	circle.style.left = `${x-12}px`;
+	y = Math.floor(-41 + 125 * Math.sin(Math.acos((x - 118) / 125)));
+	circle.style.bottom = `${y-22}px`;
+
+	let xCircle = circle.offsetLeft < 0 ? 0 : circle.offsetLeft;
+	let percent = Math.floor(xCircle * 100 / 214);
+	data.innerHTML = `${percent}%`;
+}
+})();
