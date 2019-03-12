@@ -6,23 +6,23 @@
 	});
 	
 
-		$("#range").roundSlider({
-			sliderType: "min-range",
-			circleShape: "custom-quarter",
-			// circleShape: "custom-half",
-			min: 0,
-			max: 100,
-			value: 60,
-			startAngle: 45,
-			editableTooltip: false,
-			radius: 190,
-			// radius:120,
-			width: 20,
-			handleSize: "+17",
-			// handleShape: "dot",
-			tooltipFormat: "tooltipVal1",
-			lineCap: "round"
-	});
+	// 	$("#range").roundSlider({
+	// 		sliderType: "min-range",
+	// 		circleShape: "custom-quarter",
+	// 		// circleShape: "custom-half",
+	// 		min: 0,
+	// 		max: 100,
+	// 		value: 60,
+	// 		startAngle: 45,
+	// 		editableTooltip: false,
+	// 		radius: 190,
+	// 		// radius:120,
+	// 		width: 20,
+	// 		handleSize: "+17",
+	// 		// handleShape: "dot",
+	// 		tooltipFormat: "tooltipVal1",
+	// 		lineCap: "round"
+	// });
 	
 
 })(jQuery);
@@ -214,11 +214,11 @@ function circlePosition(e) {
 	}
 
 	circle.style.left = `${x-12}px`;
-	y = Math.floor(-41 + 125 * Math.sin(Math.acos((x - 118) / 125)));
+	y = Math.round(-41 + 125 * Math.sin(Math.acos((x - 118) / 125)));
 	circle.style.bottom = `${y-22}px`;
 
-	let xCircle = circle.offsetLeft < 0 ? 0 : circle.offsetLeft;
-	let percent = Math.floor(xCircle * 100 / 214);
+	
+	let percent = Math.round((x-10) * 100 / 216);
 	data.innerHTML = `${percent}%`;
 }
 })();

@@ -140,6 +140,7 @@ img {
 @import 'nice-select';
 @import 'checkbox';
 
+
 //custom scroll 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
@@ -1091,7 +1092,7 @@ input[type=range]:focus::-ms-fill-upper {
 	 .range__block {
 		//  border: 1px solid red;
 		position: relative;
-		width: 240px;
+		width: 236px;
 		height: 88px;
 		display: inline-block;
 		cursor: pointer;
