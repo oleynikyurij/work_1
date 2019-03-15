@@ -2,6 +2,7 @@
 (function ($) {
 	$(window).on("load", function () {
 		$(".recepits__table").mCustomScrollbar();
+		
 		$('select').niceSelect();
 	});
 	
