@@ -2,29 +2,12 @@
 (function ($) {
 	$(window).on("load", function () {
 		$(".recepits__table").mCustomScrollbar();
-		
+			
 		$('select').niceSelect();
 	});
 	
 
-	// 	$("#range").roundSlider({
-	// 		sliderType: "min-range",
-	// 		circleShape: "custom-quarter",
-	// 		// circleShape: "custom-half",
-	// 		min: 0,
-	// 		max: 100,
-	// 		value: 60,
-	// 		startAngle: 45,
-	// 		editableTooltip: false,
-	// 		radius: 190,
-	// 		// radius:120,
-	// 		width: 20,
-	// 		handleSize: "+17",
-	// 		// handleShape: "dot",
-	// 		tooltipFormat: "tooltipVal1",
-	// 		lineCap: "round"
-	// });
-	
+
 
 })(jQuery);
 
@@ -222,4 +205,37 @@ function circlePosition(e) {
 	let percent = Math.round((x-10) * 100 / 216);
 	data.innerHTML = `${percent}%`;
 }
+})();
+
+;(function() {
+	let automaile = document.querySelector('.automaile');
+	if(!automaile) {
+		return;
+	}
+
+
+	let viewBtn = document.querySelectorAll('[data-view]');
+	let infoBlock = document.querySelectorAll('.info');
+	let closeBlock = document.querySelectorAll('.view__close');
+
+	
+
+	viewBtn.forEach(function(el, i) {
+		el.addEventListener('click', function(e) {
+			e.preventDefault();
+			el.classList.add('view-link');
+			closeBlock[i].classList.remove('hidden');
+			infoBlock[i].classList.add('active');
+			
+		});
+	});
+
+	closeBlock.forEach(function(el, i) {
+		el.addEventListener('click', function(e) {
+			e.preventDefault();
+			el.classList.toggle('hidden');
+			viewBtn[i].classList.remove('view-link');
+			infoBlock[i].classList.remove('active');
+		});
+	});
 })();
