@@ -1,267 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8" />
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet"
-		href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-		crossorigin="anonymous" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+        <title>Money Dashboard</title>
+    </head>
 
-	<title>Money Dashboard</title>
-</head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <div class="d-flex">
+                    <a href="#" class="logo"
+                        ><img src="img/logo.png" alt="logo"
+                    /></a>
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="menu-item ">
+                                <a href="#" class="menu-item-link "
+                                    >Dashboard</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link drop-down"
+                                    >Profile</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link active-link"
+                                    >Contacts</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link drop-down"
+                                    >Links</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link drop-down"
+                                    >Tools</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link drop-down"
+                                    >Money</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link drop-down"
+                                    >Training</a
+                                >
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-item-link">Support</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user">
+                    <span class="user-title">David Test</span>
+                    <img src="img/user.jpg" alt="user" class="user-foto" />
+                    <div class="mobile-img">
+                        <span class="menu-toggle">toggle menu</span>
+                    </div>
+                    <div class="mobile dn">
+                        <ul class="mobile-menu">
+                            <li>
+                                <a href="#" class="mobile-menu-link"
+                                    >Dashboard
+                                    <img src="img/mobile/dashboard.svg" alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-menu-link">
+                                    Profile
+                                    <img src="img/mobile/upgrad.svg" alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-menu-link">
+                                    Contacts
+                                    <img src="img/mobile/face.svg" alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-menu-link">
+                                    Links
+                                    <img src="img/mobile/problem.svg" alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-menu-link">
+                                    Tools<img src="img/mobile/logout.svg" alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-menu-link">
+                                    Money<img src="img/mobile/logout.svg" alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-menu-link">
+                                    Training<img
+                                        src="img/mobile/logout.svg"
+                                        alt=""
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-menu-link">
+                                    Support<img
+                                        src="img/mobile/logout.svg"
+                                        alt=""
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-<body>
-	<header class="header">
-		<div class="header-content">
-			<div class="d-flex">
-				<a href="#" class="logo"><img src="img/logo.png" alt="logo" /></a>
-				<nav class="nav">
-					<ul class="menu">
-						<li class="menu-item ">
-							<a href="#" class="menu-item-link ">Dashboard</a>
-						</li>
-						<li class="menu-item">
-							<a href="#" class="menu-item-link drop-down">Profile</a>
-						</li>
-						<li class="menu-item">
-							<a href="#" class="menu-item-link active-link">Contacts</a>
-						</li>
-						<li class="menu-item">
-							<a href="#" class="menu-item-link drop-down">Links</a>
-						</li>
-						<li class="menu-item">
-							<a href="#" class="menu-item-link drop-down">Tools</a>
-						</li>
-						<li class="menu-item">
-							<a href="#" class="menu-item-link drop-down">Money</a>
-						</li>
-						<li class="menu-item">
-							<a href="#" class="menu-item-link drop-down">Training</a>
-						</li>
-						<li class="menu-item">
-							<a href="#" class="menu-item-link">Support</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="user">
-				<span class="user-title">David Test</span>
-				<img src="img/user.jpg" alt="user" class="user-foto" />
-				<div class="mobile-img">
-					<span class="menu-toggle">toggle menu</span>
-				</div>
-				<div class="mobile dn">
-					<ul class="mobile-menu">
-						<li>
-							<a href="#" class="mobile-menu-link">Dashboard
-								<img src="img/mobile/dashboard.svg" alt=""></a>
-						</li>
-						<li>
-							<a href="#" class="mobile-menu-link">
-								Profile
-								<img src="img/mobile/upgrad.svg" alt=""></a>
-						</li>
-						<li>
-							<a href="#" class="mobile-menu-link">
-								Contacts
-								<img src="img/mobile/face.svg" alt=""></a>
-						</li>
-						<li>
-							<a href="#" class="mobile-menu-link">
-								Links
-								<img src="img/mobile/problem.svg" alt=""></a>
-						</li>
-						<li>
-							<a href="#" class="mobile-menu-link">
-								Tools<img src="img/mobile/logout.svg" alt=""></a>
-						</li>
-						<li>
-							<a href="#" class="mobile-menu-link">
-								Money<img src="img/mobile/logout.svg" alt=""></a>
-						</li>
-						<li>
-							<a href="#" class="mobile-menu-link">
-								Training<img src="img/mobile/logout.svg" alt=""></a>
-						</li>
-						<li>
-							<a href="#" class="mobile-menu-link">
-								Support<img src="img/mobile/logout.svg" alt=""></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
+        <section class="section content money-dashboard">
+            <div class="wrap">
+                <h1 class="section-h1">Traffic</h1>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="block">
+                            <div class="block-img block-img__1">
+                                <img src="img/money-img1.png" alt="icon" />
+                            </div>
+                            <div class="block-text">
+                                <div>
+                                    <p class="block-subtitle">
+                                        Your Team Location
+                                    </p>
+                                    <p class="block-title">
+                                        <img src="img/money-rang.png" alt="" />
+                                        Pro Influencer
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="block-subtitle">
+                                        Paid as Rank
+                                    </p>
+                                    <p class="block-title ">
+                                        <img src="img/money-rang1.png" alt="" />
+                                        Influencer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./block -->
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="block">
+                            <div class="block-img block-img__2">
+                                <img src="img/money-img2.png" alt="icon" />
+                            </div>
+                            <div class="block-text block-text--progress">
+                                <div>
+                                    <p class="block-subtitle">
+                                        Total Unique Visitors
+                                    </p>
+                                    <div class="progress">
+                                        <div
+                                            class="progress__bar--1 progress__bar"
+                                        >
+                                            96%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./block -->
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="block">
+                            <div class="block-img block-img__3">
+                                <img src="img/money-img3.png" alt="icon" />
+                            </div>
+                            <div class="block-text block-text--progress">
+                                <div>
+                                    <p class="block-subtitle">
+                                        Total Unique Visitors
+                                    </p>
+                                    <div class="progress">
+                                        <div
+                                            class="progress__bar--2 progress__bar"
+                                        >
+                                            83%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="block-subtitle">
+                                        Total Unique Visitors
+                                    </p>
+                                    <div class="progress">
+                                        <div
+                                            class="progress__bar--3 progress__bar"
+                                        >
+                                            96%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./block -->
+                    </div>
+                </div>
+                <!-- ./row -->
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="recepits block__graph">
+                            <h3>
+                                <span class="recepits__image">
+                                    <img
+                                        src="img/money-graph.png"
+                                        alt="Sales Profits"
+                                /></span>
 
-	<section class="section content money-dashboard">
-		<div class="wrap">
-			<h1 class="section-h1">Traffic</h1>
-			<div class="row">
-				<div class="col-4">
-					<div class="block">
-						<div class="block-img block-img__1">
-							<img src="img/money-img1.png" alt="icon">
-						</div>
-						<div class="block-text">
-							<div>
-								<p class="block-subtitle">
-									Your Team Location
-								</p>
-								<p class="block-title mb-4">
-									<img src="img/money-rang.png" alt="">
-									Pro Influencer
-								</p>
-							</div>
-							<div>
-								<p class="block-subtitle">
-									Paid as Rank
-								</p>
-								<p class="block-title ">
-									<img src="img/money-rang1.png" alt="">
-									Influencer
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="block">
-						<div class="block-img block-img__2">
-							<img src="img/money-img2.png" alt="icon">
-						</div>
-						<div class="block-text block-text--progress">
-							<div>
-								<p class="block-subtitle">
-									Total Unique Visitors
-								</p>
-								<div class="progress">
-									<div class="progress__bar--1 progress__bar">96%</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="block">
-						<div class="block-img block-img__3">
-							<img src="img/money-img3.png" alt="icon">
-						</div>
-						<div class="block-text block-text--progress">
-							<div>
-								<p class="block-subtitle">
-									Total Unique Visitors
-								</p>
-								<div class="progress">
-									<div class="progress__bar--2 progress__bar">83%</div>
-								</div>
-							</div>
-							<div>
-								<p class="block-subtitle">
-									Total Unique Visitors
-								</p>
-								<div class="progress">
-									<div class="progress__bar--3 progress__bar">96%</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="recepits">
-						<h3><span class="recepits__image"><img src="img/money-history.png"
-									alt="Commissions History"></span>
-							Commissions History
-						</h3>
+                                Sales Profits
+                            </h3>
+                            <div class="graph">
+                                <img src="img/money-graphiki.png" alt="graph" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="recepits block__graph">
+                            <h3>
+                                <span class="recepits__image"
+                                    ><img
+                                        src="img/money-graph.png"
+                                        alt="Visual Graph One"
+                                /></span>
 
-						<div class="table__wrap">
-							<div class="tank__table table">
-								<div class="table__header">
-									<div class="header__item header__item--user"><span>User
-											ID</span><a href="#" class="ml-2"> <img
-												src="img/filter-arrow.png" alt="filter"></a></div>
+                                Visual Graph One
+                            </h3>
+                            <div class="circle-graph">
+                                <div class="pie-chart">
+                                    <img
+                                        src="img/money-diagram.png"
+                                        alt="graph"
+                                    />
+                                </div>
+                                <div class="mt-5">
+                                    <ul class="graph__list">
+                                        <li class="list__item">  Local</li>
+                                        <li class="list__item">  International</li>
+                                        <li class="list__item">  Out of state</li>
+                                    </ul>
+                                </div>
+                            </div>
+												</div>
+												<!-- ./circle-graph -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="recepits">
+                            <h3>
+                                <span class="recepits__image"
+                                    ><img
+                                        src="img/money-history.png"
+                                        alt="Commissions History"
+                                /></span>
 
-									<div class="header__item header__item--name"><span>Name</span><a
-											href="#" class="ml-2"> <img src="img/filter-arrow.png"
-												alt="filter"></a></div>
-									<div class="header__item header__item--type"><span>
-											Account
-											Type
-										</span><a href="#" class="ml-2"> <img src="img/filter-arrow.png"
-												alt="filter"></a></div>
-									<div class="header__item header__item--sponsor"><span>
-											Assign
-											New Placement Sponsor
-										</span><a href="#" class="ml-2"> <img src="img/filter-arrow.png"
-												alt="filter"></a></div>
-									<div class="header__item header__item--action">
-										<span>Action</span><a href="#" class="ml-2"> <img
-												src="img/filter-arrow.png" alt="filter"></a></div>
-								</div>
-								<div class="table__row">
-									<div class="table__item table__item--user">11343</div>
-									<div class="table__item table__item--name">Keith Lander</div>
-									<div class="table__item table__item--type table__memberId">
-										Rider
+                                Commissions History
+                            </h3>
 
-									</div>
+                            <div class="table__wrap">
+                                <div class="table money__table">
+                                    <div class="table__header">
+                                        <div
+                                            class="header__item header__item--user"
+                                        >
+                                            <span>Order ID</span
+                                            ><a href="#" class="ml-2">
+                                                <img
+                                                    src="img/filter-arrow.png"
+                                                    alt="filter"
+                                            /></a>
+                                        </div>
 
-									<div class="table__item table__item--action">
-										Place Member
+                                        <div
+                                            class="header__item header__item--purchaser"
+                                        >
+                                            <span>Purchaser</span
+                                            ><a href="#" class="ml-2">
+                                                <img
+                                                    src="img/filter-arrow.png"
+                                                    alt="filter"
+                                            /></a>
+                                        </div>
+                                        <div
+                                            class="header__item header__item--enroller"
+                                        >
+                                            <span> Enroller </span
+                                            ><a href="#" class="ml-2">
+                                                <img
+                                                    src="img/filter-arrow.png"
+                                                    alt="filter"
+                                            /></a>
+                                        </div>
+                                        <div
+                                            class="header__item header__item--product"
+                                        >
+                                            <span>
+                                                Product </span
+                                            ><a href="#" class="ml-2">
+                                                <img
+                                                    src="img/filter-arrow.png"
+                                                    alt="filter"
+                                            /></a>
+                                        </div>
+                                        <div
+                                            class="header__item header__item--cv"
+                                        >
+                                            <span>CV</span
+                                            ><a href="#" class="ml-2">
+                                                <img
+                                                    src="img/filter-arrow.png"
+                                                    alt="filter"
+                                            /></a>
+                                        </div>
+                                        <div
+                                            class="header__item header__item--amount"
+                                        >
+                                            <span>Amount Paid</span
+                                            ><a href="#" class="ml-2">
+                                                <img
+                                                    src="img/filter-arrow.png"
+                                                    alt="filter"
+                                            /></a>
+                                        </div>
+                                        <div
+                                            class="header__item header__item--date"
+                                        >
+                                            <span>Transaction Date</span
+                                            ><a href="#" class="ml-2">
+                                                <img
+                                                    src="img/filter-arrow.png"
+                                                    alt="filter"
+                                            /></a>
+                                        </div>
+																		</div>
+																		<!-- ./table__header -->
+                                    <div class="table__row">
+                                        <div
+                                            class="table__item table__item--user"
+                                        >
+																				124855
+                                        </div>
+                                        <div
+                                            class="table__item table__item--purchaser"
+                                        >
+																				Michael Harris
+                                        </div>
+                                        <div
+                                            class="table__item table__item--enroller "
+                                        >
+																				Jane Doe
+                                        </div>
 
-									</div>
-								</div>
+                                        <div
+                                            class="table__item table__item--product"
+                                        >
+																				TRYP Upgrade Package
+                                        </div>
+                                        <div
+                                            class="table__item table__item--cv"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--amount"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--date"
+                                        >
+																				11-20-2018
+                                        </div>
+																		</div>
+																		<!-- ./table__row -->
+																		<div class="table__row">
+                                        <div
+                                            class="table__item table__item--user"
+                                        >
+																				124855
+                                        </div>
+                                        <div
+                                            class="table__item table__item--purchaser"
+                                        >
+																				Michael Harris
+                                        </div>
+                                        <div
+                                            class="table__item table__item--enroller "
+                                        >
+																				Jane Doe
+                                        </div>
 
-							</div>
-							<!-- ./table -->
-						</div>
-						<!-- ./table__wrap -->
-					</div>
-					<!-- ./recepits -->
-				</div>
-			</div>
-		</div>
-		<!-- ./wrap -->
-	</section>
+                                        <div
+                                            class="table__item table__item--product"
+                                        >
+																				TRYP Upgrade Package
+                                        </div>
+                                        <div
+                                            class="table__item table__item--cv"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--amount"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--date"
+                                        >
+																				11-20-2018
+                                        </div>
+																		</div>
+																		<!-- ./table__row -->
+																		<div class="table__row">
+                                        <div
+                                            class="table__item table__item--user"
+                                        >
+																				124855
+                                        </div>
+                                        <div
+                                            class="table__item table__item--purchaser"
+                                        >
+																				Michael Harris
+                                        </div>
+                                        <div
+                                            class="table__item table__item--enroller "
+                                        >
+																				Jane Doe
+                                        </div>
 
+                                        <div
+                                            class="table__item table__item--product"
+                                        >
+																				TRYP Upgrade Package
+                                        </div>
+                                        <div
+                                            class="table__item table__item--cv"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--amount"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--date"
+                                        >
+																				11-20-2018
+                                        </div>
+																		</div>
+																		<!-- ./table__row -->
+																		<div class="table__row">
+                                        <div
+                                            class="table__item table__item--user"
+                                        >
+																				124855
+                                        </div>
+                                        <div
+                                            class="table__item table__item--purchaser"
+                                        >
+																				Michael Harris
+                                        </div>
+                                        <div
+                                            class="table__item table__item--enroller "
+                                        >
+																				Jane Doe
+                                        </div>
 
+                                        <div
+                                            class="table__item table__item--product"
+                                        >
+																				TRYP Upgrade Package
+                                        </div>
+                                        <div
+                                            class="table__item table__item--cv"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--amount"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--date"
+                                        >
+																				11-20-2018
+                                        </div>
+																		</div>
+																		<!-- ./table__row -->
+																		<div class="table__row">
+                                        <div
+                                            class="table__item table__item--user"
+                                        >
+																				124855
+                                        </div>
+                                        <div
+                                            class="table__item table__item--purchaser"
+                                        >
+																				Michael Harris
+                                        </div>
+                                        <div
+                                            class="table__item table__item--enroller "
+                                        >
+																				Jane Doe
+                                        </div>
 
-	<footer class="footer">
-		<p class="copy">Copyright &copy; 2018 Tryp Technologies Inc. All rights reserved.
-		</p>
-		<p class="privacy"> <a href="#">Terms of use</a> <span>|</span> <a
-				href="#">Privacy
-				Policy</a></p>
-	</footer>
-	<div class="overlay dn"></div>
+                                        <div
+                                            class="table__item table__item--product"
+                                        >
+																				TRYP Upgrade Package
+                                        </div>
+                                        <div
+                                            class="table__item table__item--cv"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--amount"
+                                        >
+																				100.00
+                                        </div>
+                                        <div
+                                            class="table__item table__item--date"
+                                        >
+																				11-20-2018
+                                        </div>
+																		</div>
+																		<!-- ./table__row -->
+                                </div>
+                                <!-- ./table -->
+                            </div>
+                            <!-- ./table__wrap -->
+                        </div>
+                        <!-- ./recepits -->
+                    </div>
+                </div>
+                <!-- ./row -->
+            </div>
+            <!-- ./wrap -->
+        </section>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-		crossorigin="anonymous"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.js"></script> -->
-	<script src="js/jquery.mCustomScrollbar.min.js"></script>
-	<script src="js/jquery.mousewheel.min.js"></script>
-	<script src="js/jquery.nice-select.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
+        <footer class="footer">
+            <p class="copy">
+                Copyright &copy; 2018 Tryp Technologies Inc. All rights
+                reserved.
+            </p>
+            <p class="privacy">
+                <a href="#">Terms of use</a> <span>|</span>
+                <a href="#">Privacy Policy</a>
+            </p>
+        </footer>
+        <div class="overlay dn"></div>
 
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"
+        ></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.js"></script> -->
+        <script src="js/jquery.mCustomScrollbar.min.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>

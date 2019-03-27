@@ -1544,6 +1544,10 @@
 //MONEY DASHBOARD
 
 .money-dashboard {
+	.block__graph {
+		margin-bottom: 35px;
+		height: 425px;
+	}
 	.block {
 		display: flex;
 		height: 212px;
@@ -1587,7 +1591,7 @@
 			color: #61686e;
 			font-family: "Open Sans Semibold";
 			font-size: 18px;
-			margin-top: 17px;
+			margin-top: 12px;
 			margin-bottom: 0;
 		}
 		&-title {
@@ -1596,36 +1600,111 @@
 			font-size: 24px;
 			text-transform: uppercase;
 			margin-bottom: 0;
+			
+		}
+		
+	}
+	.progress {
+		width: 100%;
+		height: 30px;
+		border-radius: 15px;
+		background-color: #ebebeb;
+		margin-top: 16px;
+		&__bar {
+			border-radius: 15px;
+			color: #ffffff;
+			font-family: "Open Sans Bold";
+			padding: 7px 19px;
+			
+			&--1 {
+				background-image: linear-gradient(to right, #43e397 0%, #3ab4b7 100%);	
+				width: 96%;
+			}	
+			&--2 {
+				background-image: linear-gradient(to right, #f8e086 0%, #f48281 100%);
+				width: 83%;
+			}
+			&--3 {
+				background-image: linear-gradient(to right, #f44499 0%, #ff7477 100%);
+				width: 96%;
+			}
+		}	
+	}
+	.circle-graph  {
+		display: flex;
+		justify-content: space-around;
+	}
+	.pie-chart img {
+		width: 256px;
+	}
+	.graph__list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		.list__item {
+			color: #19375d;
+      font-size: 18px;
+			line-height: 27px;
+			padding: 16px;
+			position: relative;
+			&::before {
+				position: absolute;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -12px;
+				content: '';
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				}
+			&:nth-child(1)::before {
+				background-color: #0172ff;
+			}
+			&:nth-child(2)::before {
+				background-color: #9b51e0;
+			}
+			&:nth-child(3)::before {
+				background-color: #27ae60;
+			}
 		}
 	}
-	
+	.money__table {
+		min-width: 1100px;
+	}
+	.table {
+	.header__item--user,
+	.table__item--user {
+		width: 17%;
+	}
+	.header__item--purchaser,
+	.table__item--purchaser {
+		width: 16%;
+	}
+	.header__item--enroller,
+	.table__item--enroller {
+		width: 11%;
+	}
+	.header__item--product,
+	.table__item--product {
+		width: 16%;
+	}
+	.header__item--cv,
+	.table__item--cv {
+		width: 12%;
+	}
+	.header__item--amount,
+	.table__item--amount {
+		width: 15%;
+	}
+	.header__item--date,
+	.table__item--date {
+		width: 13%;
+	}
 }
-.progress {
-	width: 100%;
-	height: 30px;
-	border-radius: 15px;
-	background-color: #ebebeb;
-	margin-top: 16px;
-	&__bar {
-		border-radius: 15px;
-		color: #ffffff;
-		font-family: "Open Sans Bold";
-		padding: 7px 19px;
-		
-		&--1 {
-			background-image: linear-gradient(to right, #43e397 0%, #3ab4b7 100%);	
-			width: 96%;
-		}	
-		&--2 {
-			background-image: linear-gradient(to right, #f8e086 0%, #f48281 100%);
-			width: 83%;
-		}
-		&--3 {
-			background-image: linear-gradient(to right, #f44499 0%, #ff7477 100%);
-			width: 96%;
-		}
-	}	
 }
+
 
 
 
