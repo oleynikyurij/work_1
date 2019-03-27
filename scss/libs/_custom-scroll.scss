@@ -1,0 +1,17 @@
+//custom scroll 
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	width: 10px;
+	height: 124px;
+	box-shadow: 0 6px 10px rgba(0, 114, 255, 0.35);
+	border-radius: 5px;
+	background-color: #0072ff;
+}
+
+.section .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background-color: #0072ff;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	background-color: transparent;
+}

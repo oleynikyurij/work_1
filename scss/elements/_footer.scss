@@ -1,0 +1,46 @@
+//FOOTER
+.footer {
+	width: 100%;
+	height: 130px; //150px
+	background-color: #1f2429;
+	padding-top: 40px; //40px
+
+	.copy {
+		text-align: center;
+		color: #60666c;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.privacy {
+		font-size: 14px;
+		line-height: 20px;
+		text-align: center;
+
+		a {
+			color: #0072ff;
+			text-decoration: none;
+			position: relative;
+
+			&::before {
+				content: '';
+				bottom: -1px;
+				left: 2px;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				background-color: #0976b4;
+				transition: 0.2s;
+				transform: scaleX(0);
+			}
+
+			&:hover:before {
+				transform: scaleX(1);
+			}
+		}
+
+		span {
+			color: #798087;
+		}
+	}
+}
