@@ -169,7 +169,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 	// PROFILE
-	;(function () {
+	;
+	(function () {
 
 		let range = document.querySelector('#range-block');
 		if (!range) {
@@ -211,7 +212,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	})();
 
 	// Automaile
-	;(function () {
+	;
+	(function () {
 		let automaile = document.querySelector('.automaile');
 		if (!automaile) {
 			return;
@@ -245,7 +247,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	})();
 
 	//GENEALOGY
-	;(function () {
+	;
+	(function () {
 		let genealogy = document.querySelector('.genealogy');
 		if (!genealogy) {
 			return;
@@ -298,24 +301,176 @@ window.addEventListener('DOMContentLoaded', () => {
 	})();
 
 	//Mobile Dashboard
-	;(function() {
+	;
+	(function () {
+		let moneyDashboard = document.querySelector('.money-dashboard');
+		if (!moneyDashboard) {
+			return;
+		};
 
-		function move() {
-			var elem = document.getElementById("myBar"); 
-			var width = 1;
-			var id = setInterval(frame, 10);
-			function frame() {
-				if (width >= 100) {
-					clearInterval(id);
+		function moveProgressBar(el) {
+
+			let element = document.querySelector(`.${el}`);
+
+			let dataProgress = element.getAttribute('data-progress');
+
+			let widthElement = 1;
+			let interval = setInterval(widthProgressBar, 10);
+
+			function widthProgressBar() {
+				if (widthElement >= dataProgress) {
+					clearInterval(interval);
 				} else {
-					width++; 
-					elem.style.width = width + '%'; 
+					widthElement++;
+					element.style.width = `${widthElement}%`;
+					element.innerHTML = `${widthElement}%`;
 				}
 			}
 		}
+		moveProgressBar('progress__bar--1');
+		moveProgressBar('progress__bar--2');
+		moveProgressBar('progress__bar--3');
 
 
+		//diagramm 
+		var ctx = document.getElementById('circle-graph').getContext('2d');
+		Chart.defaults.global.defaultFontSize = 18;
+		Chart.defaults.global.defaultFontColor = 'black';
 
+		var chart = new Chart(ctx, {
+			// The type of chart we want to create
+			type: 'doughnut',
+
+			// The data for our dataset
+			data: {
+				labels: ['Local', 'International', 'Out of State'],
+				datasets: [{
+					backgroundColor: ["#0172ff", "#9b51e0", "#27ae60", ],
+					borderWidth: 0,
+					data: [67, 30, 56]
+				}]
+			},
+
+
+			// Configuration options go here
+			options: {
+				responsive: false,
+				legend: {
+					display: false,
+
+				},
+				title: {
+					display: false,
+
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				},
+				// tooltips: false
+				tooltips: {
+					cornerRadius: 10,
+					caretSize: 0,
+					xPadding: 10,
+					yPadding: 10,
+					backgroundColor: 'rgba(255, 255, 255, 0.8)',
+					bodyFontColor: 'rgb(0, 0, 0)',
+					titleFontStyle: 'bold',
+					titleMarginBottom: 15
+				}
+			}
+		});
+
+		var ctx1 = document.getElementById('graph').getContext('2d');
+		var chart1 = new Chart(ctx1, {
+			type: 'line',
+
+			// The data for our dataset
+			data: {
+				labels: ['Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22'],
+				datasets: [
+					{
+						label: '$',
+						backgroundColor: 'rgba(227,240,250,0.7)',
+						fill: true,
+						data: [
+							30,
+							75,
+							47,
+							64,
+							57,
+							38,
+							77
+						],
+						borderColor: '#0474ff',
+						pointBorderColor: '#0474ff',
+						pointBackgroundColor: '#fff',
+						pointRadius: 5,
+						pointHoverRadius: 7,
+						pointHitRadius: 10,
+						pointBorderWidth: 2,
+						pointStyle: 'rectRounded'
+
+					},
+					{
+						label: '$',
+						backgroundColor: '#e6f9f5',
+						fill: true,
+						data: [
+							44,
+							65,
+							57,
+							43,
+							74,
+							25,
+							70
+						],
+						borderColor: '#74e2c9',
+						pointBorderColor: '#74e2c9',
+						pointBackgroundColor: '#fff',
+						pointRadius: 5,
+						pointHoverRadius: 7,
+						pointHitRadius: 10,
+						pointBorderWidth: 2,
+						pointStyle: 'rectRounded'
+
+					},
+
+				]
+			},
+
+
+			// Configuration options go here
+			options: {
+				responsive: true,
+				legend: {
+					display: false,
+
+				},
+				title: {
+					display: false,
+
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				},
+				// tooltips: false
+				tooltips: {
+					cornerRadius: 10,
+					caretSize: 0,
+					xPadding: 10,
+					yPadding: 10,
+					backgroundColor: 'rgba(0, 0, 0, 0.7)',
+					// backgroundColor: '#0474ff',
+					bodyFontColor: 'rgb(255, 255, 255)',
+					fontColor: 'rgb(0, 0, 0)',
+					titleFontStyle: 'bold',
+					titleMarginBottom: 15
+				},
+
+			}
+		});
 
 	})();
 
